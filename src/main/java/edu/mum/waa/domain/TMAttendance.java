@@ -24,7 +24,7 @@ public class TMAttendance {
 	}
 
 	@Column(name = "StudentId")
-	private Long studentId;
+	private String studentId;
 	
 	@Column(name = "CheckingTime")
 	private LocalDate checkingTime;
@@ -33,13 +33,13 @@ public class TMAttendance {
 	private String locationId;
 	
 	@Column(name = "MeditationTypeId")
-	private Long meditationTypeId;
+	private String meditationTypeId;
 
-	public Long getStudentId() {
+	public String getStudentId() {
 		return studentId;
 	}
 
-	public void setStudentId(Long studentId) {
+	public void setStudentId(String studentId) {
 		this.studentId = studentId;
 	}
 
@@ -59,11 +59,11 @@ public class TMAttendance {
 		this.locationId = locationId;
 	}
 
-	public Long getMeditationTypeId() {
+	public String getMeditationTypeId() {
 		return meditationTypeId;
 	}
 
-	public void setMeditationTypeId(Long meditationTypeId) {
+	public void setMeditationTypeId(String meditationTypeId) {
 		this.meditationTypeId = meditationTypeId;
 	}	
 
